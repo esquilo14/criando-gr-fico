@@ -11,6 +11,14 @@
      color: var(--primary-color);
      font-family: var(--font);
      height: 100vh;
+     margin: 0;
     
+ }
+
+ header { 
+
+    background-color: var(--bg-color);
+    text-align: center; /* alinhamento de texto*/
+
 
  }
