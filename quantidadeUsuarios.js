@@ -18,7 +18,7 @@ async function quantidadeUsuarios() {
         const graficos = document.createElement('div')
       grafico.className = 'grafico'
       document.getElementById('grafico-conteiner').appendChild(grafico)
-      plotly.newplot(grafico)
+      plotly.newplot(grafico, data)
      
   }
   
