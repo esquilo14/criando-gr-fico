@@ -1,75 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/*paletas de cores: https://colorhunt.co/*/
 
 :root {
-    --bg-color: #402E7A;
+    --bg-color: hsl(341, 78%, 28%);
     --primary-color: #3DC2EC;
     --secondary-color: #4C3BCF;
+    --font: "Nunito Sans", sans-serif;
 }
 
- body {
-     background-color: var(--bg-color);/* cor de fundo */
-     color: var(--primary-color);
-     font-family: var(--font);
-     height: 100vh;
-     margin: 0;
-    
- }
-
- header { 
-
+body {
+    /*cor de fundo*/
     background-color: var(--bg-color);
-    text-align: center; /* alinhamento de texto*/
-
-
- }
-
- h1 {
-    font-size: 2rem;
-    color: var(--bg-color);
-    font-weight: 700;
-
-
- }
-
-
-nav {
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
+    /*cor da fonte*/
+    color: var(--primary-color);
+    /*estilo de fonte*/
+    font-family: var(--font);
+    /*faz com que o elemento ocupe 100% da altura da janela do navegador. */
+    height: 100vh;
+    margin: 0;
 }
-
-
-nav a {
-    text-decoration: none;
-    color: var(--bg-color);
-     margin: 0 2rem 1rem 0rem;
-     font-size: 1.2rem;
-}
-
 
 header {
+    /*cor de fundo*/
     background-color: var(--primary-color);
+    /*alinha o texto ao centro*/
     text-align: center;
+    /*spaçamento interno*/
     padding: 1px;
 }
-
-
-
+h1 {
+    /*tamanho da fonte*/
+    font-size: 2rem;
+    /*cor da fonte*/
+    color: var(--bg-color);
+    /*peso da fonte*/
+    font-weight: 700;
+}
+nav {
+    /*disposição do elementos*/
+    display: flex;
+    /*alinhar os elemento ao centro*/
+    justify-content: center;
+    /*Peo da fonte*/
+    font-weight: 400;
+}
+nav a {
+    /*decoração da fonte*/
+    text-decoration: none;
+    /*cor da fonte*/
+    color: var(--bg-color);
+    /*margem: equerda cima direito baixo*/
+    margin: 0 2rem 1rem 0;
+    /**/
+    font-size: 1.2rem;
+}
+/*efeito adicionado quando o ouise paar sbre o links dentro da tag nav*/
 nav a:hover {
+    /*adiciona um underline*/
     text-decoration: underline;
+    /*diminui o tamanho da fonte*/
     transform: scale(0.90);
+    /*adiciona um tmpo na tranição do tamanho da fonte*/
     transition: transform 0.1s;
 }
+.graficos-container {
+    /**/
+    margin: 5rem;
+}
+.grafico{
+    margin-top: 3rem;
+    
+}
+.graficos-container__texto {
+    /*tamanhoda fonte*/
+    font-size: 1.3rem;
 
+    /*alinhamento do texrt*/
+    text-align: center;
 
+    /*espaçamento interno*/
+    padding: 2rem;
+
+    /*borda cor solida de 2px*/
+    border: var(--secondary-color) solid 2px;
+
+}
+
+span {
+
+    font-weight: bold;
+    /**/
+    color: var(--secondary-color);
+    /**/
+}
 
 footer {
+    /**/
     display: flex;
+    /**/
     align-items: center;
+    /**/
     justify-content: center;
+    /**/
     background-color: var(--primary-color);
+    /**/
     color: var(--bg-color);
+    /**/
     width: 100%;
+    /**/
     height: 3rem;
+    /**/
     margin-top: 2rem;
 }
+
+/*Tempo 6:30*/
