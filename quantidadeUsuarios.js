@@ -14,7 +14,7 @@ async function quantidadeUsuarios() {
             type: 'bar',//grafico de barras
             marker: {
                 color: getCSS('--primary-color')
-                //getComputedStyle(document.body).getPropertyValue('--primary-color')
+                //getComputedStyle(document.body).getPropertyValue('-primary-color')
             }
         }
     ]
